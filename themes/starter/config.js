@@ -57,7 +57,7 @@ const CONFIG = {
 
   STARTER_FEATURE_3_TITLE_1: '流畅学习', // 特性3
   STARTER_FEATURE_3_TEXT_1: '让读者更好更流畅的铺平数学理论和代码实现之间的跳跃', // 特性3
-  STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
+  STARTER_FEATURE_3_BUTTON_TEXT: '> 了解更多', // 特性3
   STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
 
   STARTER_FEATURE_4_TITLE_1: '提供多种学习媒介', // 特性4
