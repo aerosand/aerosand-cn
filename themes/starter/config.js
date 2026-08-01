@@ -1,7 +1,14 @@
+import { siteConfig } from '@/lib/config'
+
 /**
  * 另一个落地页主题
  */
 const CONFIG = {
+  STARTER_COLOR_PRIMARY: '#3758f9',
+  STARTER_COLOR_PRIMARY_HOVER: '#1b44c8',
+  STARTER_COLOR_DARK: '#111928',
+  STARTER_COLOR_TEXT_MUTED: '#637381',
+
   // 默认只展示Logo文字，如果设置了logo图片，会在文字左侧显示图标
   STARTER_LOGO: '', // 普通logo图片 示例：/images/starter/logo/logo.svg
   STARTER_LOGO_WHITE: '', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
@@ -14,8 +21,7 @@ const CONFIG = {
   STARTER_HERO_TITLE_2: '免费、开源分享关于CFD, OpenFOAM和数值计算的相关内容', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
   STARTER_HERO_BUTTON_1_TEXT: '查看文档', // 英雄区按钮
-  STARTER_HERO_BUTTON_1_URL:
-    'https://aerosand.cc', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_URL: 'https://aerosand.cc', // 英雄区按钮
   STARTER_HERO_BUTTON_2_TEXT: '赞助我们', // 英雄区按钮
   STARTER_HERO_BUTTON_2_URL: 'https://aerosand.cn/fund', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
@@ -33,10 +39,10 @@ const CONFIG = {
 
   // 特性区块
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
-  STARTER_FEATURE_TITLE: '系列课程', // 特性
+  STARTER_FEATURE_TITLE: '推荐课程', // 特性
   STARTER_FEATURE_TEXT_1: '关于 OFSP 系列课程', // 特性
   STARTER_FEATURE_TEXT_2:
-    '旨在帮助初学者更连贯更简单的入门OpenFOAM编程开发', // 特性
+    '旨在帮助初学者更连贯更简单的入门OpenFOAM编程开发 ', // 特性
 
   STARTER_FEATURE_1_TITLE_1: '免费且开源', // 特性1
   STARTER_FEATURE_1_TEXT_1: '系列课程讨论、材料和讲义均已公开', // 特性1
@@ -49,10 +55,10 @@ const CONFIG = {
   STARTER_FEATURE_2_BUTTON_URL:
     'https://aerosand.cn/cafe', // 特性2
 
-  STARTER_FEATURE_3_TITLE_1: '强调学习连贯性', // 特性3
+  STARTER_FEATURE_3_TITLE_1: '流畅学习', // 特性3
   STARTER_FEATURE_3_TEXT_1: '让读者更好更流畅的铺平数学理论和代码实现之间的跳跃', // 特性3
-  STARTER_FEATURE_3_BUTTON_TEXT: '> 查看学习建议', // 特性3
-  STARTER_FEATURE_3_BUTTON_URL: 'https://aerosand.cn/news/openfoamsharing', // 特性3
+  STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
+  STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
 
   STARTER_FEATURE_4_TITLE_1: '提供多种学习媒介', // 特性4
   STARTER_FEATURE_4_TEXT_1: '网站、微信公众号、BiliBili均在更新中', // 特性4
@@ -68,8 +74,8 @@ const CONFIG = {
   STARTER_ABOUT_BUTTON_URL: 'https://github.com/aerosand/aerosand-cn/discussions',
   STARTER_ABOUT_IMAGE_1: '/images/starter/about/about-image-01.jpg',
   STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-02.jpg',
-  STARTER_ABOUT_TIPS_1: '15w +',
-  STARTER_ABOUT_TIPS_2: '全网 15w+ 点击',
+  STARTER_ABOUT_TIPS_1: '20w +',
+  STARTER_ABOUT_TIPS_2: '全网 20w+ 点击',
   STARTER_ABOUT_TIPS_3: '全网 10k+ 关注',
 
   // 首页价格区块
@@ -115,16 +121,16 @@ const CONFIG = {
   STARTER_TESTIMONIALS_TITLE: '读者反馈',
   STARTER_TESTIMONIALS_TEXT_1: '大家怎么说',
   STARTER_TESTIMONIALS_TEXT_2:
-    '很多同学通过课程学习丰富了对 OpenFOAM 的认识，快速的完成了入门阶段',
+    '很多同学通过课程学习丰富了对 OpenFOAM 的认识，快速的跨越了入门阶段',
   STARTER_TESTIMONIALS_STAR_ICON: '/images/starter/testimonials/icon-star.svg', // 评分图标
 
   // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
   STARTER_TESTIMONIALS_ITEMS: [
     {
       STARTER_TESTIMONIALS_ITEM_TEXT:
-        '非常清晰，非常连贯！意犹未尽，学习就像看电影一样，是一种清晰连贯的享受了。',
+        '非常清晰，非常连贯！意犹未尽，学习就像看电影一样，是一种清晰连贯的享受了。 ',
       STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
+        'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '流星飞宏',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
       STARTER_TESTIMONIALS_ITEM_URL: ''
@@ -133,7 +139,7 @@ const CONFIG = {
       STARTER_TESTIMONIALS_ITEM_TEXT:
         '非常优秀的博主，看了博主网站上的sharing，感触很深，跨专业转CFD自学非常不容易，尤其是从0到1的求解器开发，深深的产生共鸣，希望博主能一直坚持跟新，我们一起追逐NS方程中的星程大海',
       STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
+        'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '想去帝国的男人',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
       STARTER_TESTIMONIALS_ITEM_URL: ''
@@ -142,7 +148,7 @@ const CONFIG = {
       STARTER_TESTIMONIALS_ITEM_TEXT:
         '这样的课程对OpenFOAM编程新手来说太重要了[星星眼]',
       STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
+        'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '英特纳雄耐尔定实现',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
       STARTER_TESTIMONIALS_ITEM_URL: ''
@@ -151,7 +157,7 @@ const CONFIG = {
       STARTER_TESTIMONIALS_ITEM_TEXT:
         'up太棒了 期待一直更新下去[呲牙][打call]，介绍编程底层的教程太少了。收藏学习！',
       STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
+        'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '磊子哥1999',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
       STARTER_TESTIMONIALS_ITEM_URL: ''
@@ -160,25 +166,15 @@ const CONFIG = {
       STARTER_TESTIMONIALS_ITEM_TEXT:
         '文字版之前就已经学完了，特别好，已充电。可能的话希望后续能写写边界条件以及一些典型类库的结构和开发，比如湍流模型，还有多相流的interfacial mass transfer之类的，期待~',
       STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
+        'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '非牛顿猪咪',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
       STARTER_TESTIMONIALS_ITEM_URL: ''
     },
     {
-      STARTER_TESTIMONIALS_ITEM_TEXT:
-        '太好了，UP加油！',
+      STARTER_TESTIMONIALS_ITEM_TEXT: '支持up的更新，个人网站上的教程已经跟着做了，听讲解感觉更加清楚',
       STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
-      STARTER_TESTIMONIALS_ITEM_NICKNAME: 'Akiseherol',
-      STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
-      STARTER_TESTIMONIALS_ITEM_URL: ''
-    },
-    {
-      STARTER_TESTIMONIALS_ITEM_TEXT: 
-      '支持up的更新，个人网站上的教程已经跟着做了，听讲解感觉更加清楚',
-      STARTER_TESTIMONIALS_ITEM_AVATAR:
-        '/image/a.png',
+        'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '达芙妮的伤心鸟',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: 'B站用户',
       STARTER_TESTIMONIALS_ITEM_URL: ''
@@ -233,22 +229,22 @@ const CONFIG = {
       STARTER_TEAM_ITEM_DESCRIPTION: '主笔'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/a.png',
+      STARTER_TEAM_ITEM_AVATAR: 'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TEAM_ITEM_NICKNAME: '**刚',
       STARTER_TEAM_ITEM_DESCRIPTION: '最佳赞助'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/a.png',
+      STARTER_TEAM_ITEM_AVATAR: 'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TEAM_ITEM_NICKNAME: '这里的',
       STARTER_TEAM_ITEM_DESCRIPTION: '最佳赞助'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/a.png',
+      STARTER_TEAM_ITEM_AVATAR: 'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TEAM_ITEM_NICKNAME: 'Dre🌟am',
       STARTER_TEAM_ITEM_DESCRIPTION: '最佳赞助'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/a.png',
+      STARTER_TEAM_ITEM_AVATAR: 'https://picgocloud.com/m/c2d8d1b7-9837-439f-866d-930dd878ee25.png',
       STARTER_TEAM_ITEM_NICKNAME: '**俊',
       STARTER_TEAM_ITEM_DESCRIPTION: '最佳赞助'
     }
@@ -272,7 +268,7 @@ const CONFIG = {
   STARTER_CONTACT_EMAIL_TEXT: 'aerosand@outlook.com',
 
   // 嵌入外部表单
-  //STARTER_CONTACT_MSG_EXTERNAL_URL: 'https://noteforms.com/forms/yfctc7', // 基于NoteForm创建，将留言数据存在Notion中
+  STARTER_CONTACT_MSG_EXTERNAL_URL: 'https://noteforms.com/forms/yfctc7', // 基于NoteForm创建，将留言数据存在Notion中
   //   自定义留言表单，以下几个配置暂时废弃
   //   STARTER_CONTACT_MSG_TITLE: '向我们留言',
   //   STARTER_CONTACT_MSG_NAME: '姓名',
@@ -312,12 +308,12 @@ const CONFIG = {
     {
       IMAGE: '/images/starter/brands/tailgrids.svg',
       IMAGE_WHITE: '/images/starter/brands/tailgrids-white.svg',
-      URL: 'https://tailgrids.com/',
+      URL: '"https://tailgrids.com/',
       TITLE: 'tailgrids'
     }
   ],
 
-  STARTER_FOOTER_SLOGAN: '我们的征途是星辰大海。',
+  STARTER_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
 
   // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
@@ -347,9 +343,7 @@ const CONFIG = {
           TITLE: 'OFSP',
           URL: 'https://aerosand.cc/docs/ofs/ofsp/'
         },
-        { 
-	        TITLE: 'OFSS', 
-	        URL: 'https://aerosand.cc/docs/ofs/ofss/' }
+        { TITLE: 'OFSS', URL: 'https://aerosand.cc/docs/ofs/ofss/' }
       ]
     },
     {
@@ -365,7 +359,7 @@ const CONFIG = {
         },
         {
           TITLE: '中国大陆使用Notion',
-          URL: 'https://aerosand.cn/news/notionfaster'
+          URL: 'https://docs.tangly1024.com/article/notion-faster'
         }
       ]
     }
@@ -390,16 +384,19 @@ const CONFIG = {
   // 页面底部的行动呼吁模块
   STARTER_CTA_ENABLE: true,
   STARTER_CTA_TITLE: '你还在等待什么呢？',
-  STARTER_CTA_TITLE_2: '现在开始学习吧',
+  STARTER_CTA_TITLE_2: '现在开始吧',
   STARTER_CTA_DESCRIPTION:
     '访问系列课程的文档，我们提供了渐进的细致教程、易读的标准格式、开放的沟通讨论，帮助您尽快度过入门难关',
   STARTER_CTA_BUTTON: true, // 是否显示按钮
-  STARTER_CTA_BUTTON_URL:
-    'https://aerosand.cc',
-  STARTER_CTA_BUTTON_TEXT: '开始学习',
+  STARTER_CTA_BUTTON_URL: 'https://notionnext.tangly1024.com/',
+  STARTER_CTA_BUTTON_TEXT: '开始体验',
 
   STARTER_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
-  STARTER_POST_REDIRECT_URL: 'https://aerosand.cn', // 重定向域名
+  STARTER_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
   STARTER_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_STARTER_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
 }
+
+export const starterConfig = (key, defaultVal = null) =>
+  siteConfig(key, defaultVal, CONFIG)
+
 export default CONFIG
